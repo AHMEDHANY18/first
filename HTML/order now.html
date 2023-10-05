@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOOD ORDER FORM</title>
+    <link rel="stylesheet" href="order-now.css">    
+    <script src="project.js"></script>
+
+</head>
+<body>
+<div>
+    <h2>========== order list ==========</h2>
+    <table width="40%" id="alignment">
+        <tr>
+            <th>Food Item</th>
+            <th></th>
+            <th>Price (Rs.)</th>
+        </tr>
+        <tr>
+            <td>Ice Coffee</td>
+            <td> - </td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>Hot Chocolate</td>
+            <td> - </td>
+            <td>$13.5</td>
+        </tr>
+        <tr>
+            <td>Coffee with Ice</td>
+            <td> - </td>
+            <td>$15.5</td>
+        </tr>
+        <tr>
+            <td>Coffee with vanilla</td>
+            <td> - </td>
+            <td>$9</td>
+        </tr>
+        <tr>
+            <td>Water Bottle</td>
+            <td> - </td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>Coffee with Milk</td>
+            <td> - </td>
+            <td>$18</td>
+        </tr>
+    </table>
+    <h1>Ice Coffee Shop - Order Form</h1>
+    <table id="table">
+        <tr>
+            <td>Branch :</td>
+            <td>
+                <select>
+                    <option>--Select Item--</option>
+                    <option>cairo</option>
+                    <option>giza</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>User name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="text" id="mobile" onfocusout="checkmob()"></td>
+        </tr>
+    </table>
+    <br>
+    <form name="table-form">
+        <table width="80%" id="alignment">
+            <tr>
+                <th>coffee Item</th>
+                <th>select</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Item 1:</td>
+                <td>
+                    <select id="item1">
+                        <option value="1">--Select Item--</option>
+                        <option value="10.00">Ice Coffee</option>
+                        <option value="13.5">Hot Chocolate</option>
+                        <option value="15.5">Coffee with Ice</option>
+                        <option value="9.00">Coffee with vanilla</option>
+                        <option value="20.00">Water Bottle</option>
+                        <option value="18.00">Coffee with Milk</option>
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q1"></td>
+                <td><input type="text" id="p1" readonly></td>
+            </tr>
+            <tr>
+                <td>Item 2:</td>
+                <td>
+                    <select id="item2">
+                        <option value="1">--Select Item--</option>
+                        <option value="10.00">Ice Coffee</option>
+                        <option value="13.5">Hot Chocolate</option>
+                        <option value="15.5">Coffee with Ice</option>
+                        <option value="9.00">Coffee with vanilla</option>
+                        <option value="20.00">Water Bottle</option>
+                        <option value="18.00">Coffee with Milk</option>
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q2"></td>
+                <td><input type="text" id="p2" readonly></td>
+            </tr>
+            <tr>
+                <td>Item 3:</td>
+                <td>
+                    <select id="item3">
+                        <option value="1">--Select Item--</option>
+                        <option value="10.00">Ice Coffee</option>
+                        <option value="13.5">Hot Chocolate</option>
+                        <option value="15.5">Coffee with Ice</option>
+                        <option value="9.00">Coffee with vanilla</option>
+                        <option value="20.00">Water Bottle</option>
+                        <option value="18.00">Coffee with Milk</option>
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q3"></td>
+                <td><input type="text" id="p3" readonly></td>
+            </tr>
+            <tr>
+                <td>Item 4:</td>
+                <td>
+                    <select id="item4">
+                        <option value="1">--Select Item--</option>
+                        <option value="10.00">Ice Coffee</option>
+                        <option value="13.5">Hot Chocolate</option>
+                        <option value="15.5">Coffee with Ice</option>
+                        <option value="9.00">Coffee with vanilla</option>
+                        <option value="20.00">Water Bottle</option>
+                        <option value="18.00">Coffee with Milk</option>
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q4"></td>
+                <td><input type="text" id="p4" readonly></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="button" class="button" value="Create Bill" onclick="createBill()"></td>
+                <td><input type="reset" class="button" value="Clear"></td>
+            </tr>
+        </table>
+    </form>
+    <table id="billTable" style="display: none;">
+        <tr>
+            <th>ITEMS</th>
+            <th>-QUANTITY</th>
+            <th>-PRICE</th>
+            <th>-TOTAL</th>
+        </tr>
+    </table>
+    <p id="totalAmount" style="display: none;"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+th {
+    text-align: left;
+}
+
+body {
+    font-size: 20pt;
+    background-color: antiquewhite;
+}
+
+.button {
+    background-color: #682929; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+div {
+    text-align: center;
+    border-style: solid;
+    margin-left: 300px;
+    width: 60%;
+}
+
+#alignment {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table{
+    display: flex; 
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(175, 92, 92);
+    padding: 15px;
+    margin: 10px 250px 15px;
+    border-radius: 10px;
+}
