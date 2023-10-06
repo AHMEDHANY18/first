@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,257 +10,266 @@
     <a href="login.html"></a>
     <link rel="stylesheet" href="first-project.css">
     <script src="final-project.js"></script>
-    
+
 
 </head>
+
 <body>
-<!-- Navbar -->
-<div class="navbar">
-    <div class="logo">Ice Coffee Shop</div>
-    <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search...">
-        <button type="submit" id="search-button">Search</button>
-    </form>
-    <a href="#header">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#res-container">Reservations</a>
-    <div id="log-container">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Ice Coffee<br> Shop</div>
+        <div class="nav-links">
+            <a href="#header">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#res-container">Reservations</a>
+
+
+        </div>
         <a href="login.html" id="log" target="_blank">Log In</a>
-    </div>
-</div>
 
-
-<div id="header">
-    <h1>Welcome to Our Coffee Shop</h1>
-    <a href="order now.html" target="_blank">Order Now</a>
-</div>
-
-<!-- Story -->
-<div id="story">
-    <h1>Our Story</h1>
-</div>
-
-<!-- Passion -->
-<div id="passion">
-    <h1>The Passion for Ice Coffee</h1>
-    <img src="image/iced-coffee.jpg" alt="Ice Coffee">
-    <p>
-        We are passionate about serving the best ice coffee in town. Our dream is to provide a unique and delightful coffee experience to our customers.
-    </p>
-</div>
-
-<!-- Menu -->
-<div id="menu">
-    <h1>Menu</h1>
-</div>
-
-<div class="card-container">
-    <div class="card">
-        <img src="image/ice-coffee-cocktail-glass-with-ice-table_93675-148540.jpg" alt="Ice Coffee">
-        <h4>Ice Coffee</h4>
-        <p>A refreshing blend of coffee and ice, perfect for a hot day.</p>
-        <p class="price">Price: $10</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card">
-        <img src="image/hot-chocolate-drink-hot-chocolate.jpg" alt="Hot Chocolate">
-        <h4>Hot Chocolate</h4>
-        <p>Creamy and delicious hot chocolate to warm your soul.</p>
-        <p class="price">Price: $13.5</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card">
-        <img src="image/coffee-drink-glass-ice.jpg" alt="Coffee with Ice">
-        <h4>Coffee with Ice</h4>
-        <p>Iced coffee with a hint of sweetness, a perfect pick-me-up.</p>
-        <p class="price">Price: $15.5</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card">
-        <img src="image/ice-cream-sundae-strawberry-cup-strawberries-dessert.jpg" alt="Coffee with Ice">
-        <h4>Coffee with Ice</h4>
-        <p>Iced coffee with a hint of sweetness, a perfect pick-me-up.</p>
-        <p class="price">Price: $9</p>
-        <button class="add-to-cart-button">Add to Cart</button>
     </div>
 
-    <div class="card2">
-        <img src="image/iced-coffee.jpg" alt="Iced Coffee">
-        <h4>Iced Coffee</h4>
-        <p>A classic iced coffee with a bold flavor and a hint of sweetness.</p>
-        <p class="price">Price: $20</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card2">
-        <img src="image/coffee-milk-glass-drink.jpg" alt="Coffee with Milk">
-        <h4>Coffee with Milk</h4>
-        <p>Creamy coffee with milk, a smooth and comforting choice.</p>
-        <p class="price">Price: $18</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card2">
-        <img src="image/coffee-milkshake-drink-food.jpg" alt="Coffee Milkshake">
-        <h4>Coffee Milkshake</h4>
-        <p>A delightful coffee milkshake, perfect for indulgence.</p>
-        <p class="price">Price: $13.5</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card2">
-        <img src="image/icecream-pineapples-fruity-summer.jpg" alt="Coffee Milkshake">
-        <h4>Ice Cream Pineapples</h4>
-        <p>A delightful coffee milkshake, perfect for indulgence.</p>
-        <p class="price">Price: $15</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <div class="card2">
-        <img src="image/hands-ice-cream-sundae-cherry.jpg" alt="Ice Cream Sundae">
-        <h4>Ice Cream Sundae</h4>
-        <p>A delightful coffee milkshake, perfect for indulgence.</p>
-        <p class="price">Price: $22</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-</div>
+    <div class="search-form">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button type="submit" id="search-button">Search</button>
+        </form>
 
-<div id="res-container">
-    <h1>Make a Reservation</h1>
-    <p>
-        We welcome reservations for special occasions. Whether it's a birthday, anniversary, or a casual get-together, we're here to make your event memorable.
-    </p>
-</div>
-
-<div class="reservation-form">
-    <h1>Reservations</h1>
-    <div class="form-group">
-        <label for="guest">guest</label>
-        <select name="party_size" id="party_size">
-            <option value="1">1 guest</option>
-            <option value="2">2 guests</option>
-            <option value="3">3 guests</option>
-            <option value="4">4 guests</option>
-            <option value="5">5 guests</option>
-            <option value="6">6 guests</option>
-            <option value="7">7 guests</option>
-            <option value="8">8 guests</option>
-            <option value="9">9 guests</option>
-            <option value="10">10 guests</option>
-        </select>
     </div>
-    <div class="form-group">
-        <label for="date">Date</label>
-        <input type="date" name="date" id="date">
+    <div id="header">
+        <h1>Welcome to Our Coffee Shop</h1>
+        <a href="order now.html" target="_blank">Order Now</a>
     </div>
-    <div class="form-group">
-        <label for="time">Time</label>
-        <input type="time" name="time" id="time">
+
+    <!-- Story -->
+    <div id="story">
+        <h1>Our Story</h1>
     </div>
-    <div>
-        <button type="submit">submit</button>
+
+    <!-- Passion -->
+    <div id="passion">
+        <h1>The Passion for Ice Coffee</h1>
+        <img src="image/iced-coffee.jpg" alt="Ice Coffee">
+        <p>
+            We are passionate about serving the best ice coffee in town. Our dream is to provide a unique and delightful
+            coffee experience to our customers.
+        </p>
     </div>
-</div>
 
-<!-- Footer -->
-<footer>
-    <div class="footer-text">
-        ###########<br>
-        Egypt - Cairo.<br>
-        El Saf - Giza<br><br>
-
-        Sunday – Friday 07:00 AM – 10:00 PM<br>
-        Friday 09:00 AM – 10:00 PM<br>
-        Saturday 08:00 PM – 11:00 PM<br><br>
-
-        Tel: 01151117044<br>
-        Email: ahmedhany200233@gmail.com<br><br>
-
-        &copy; 2023 Ice Coffee Shop. All rights reserved.
+    <!-- Menu -->
+    <div id="menu">
+        <h1>Menu</h1>
     </div>
-</footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+
+    <div class="card-container">
+        <div class="card">
+            <img src="image/ice-coffee-cocktail-glass-with-ice-table_93675-148540.jpg" alt="Ice Coffee">
+            <h4>Ice Coffee</h4>
+            <p>A refreshing blend of coffee and ice, perfect for a hot day.</p>
+            <p class="price">Price: $10</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="image/hot-chocolate-drink-hot-chocolate.jpg" alt="Hot Chocolate">
+            <h4>Hot Chocolate</h4>
+            <p>Creamy and delicious hot chocolate to warm your soul.</p>
+            <p class="price">Price: $13.5</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="image/coffee-drink-glass-ice.jpg" alt="Coffee with Ice">
+            <h4>Coffee with Ice</h4>
+            <p>Iced coffee with a hint of sweetness, a perfect pick-me-up.</p>
+            <p class="price">Price: $15.5</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="image/ice-cream-sundae-strawberry-cup-strawberries-dessert.jpg" alt="Coffee with Ice">
+            <h4>Coffee with Ice</h4>
+            <p>Iced coffee with a hint of sweetness, a perfect pick-me-up.</p>
+            <p class="price">Price: $9</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="card2">
+            <img src="image/iced-coffee.jpg" alt="Iced Coffee">
+            <h4>Iced Coffee</h4>
+            <p>A classic iced coffee with a bold flavor and a hint of sweetness.</p>
+            <p class="price">Price: $20</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card2">
+            <img src="image/coffee-milk-glass-drink.jpg" alt="Coffee with Milk">
+            <h4>Coffee with Milk</h4>
+            <p>Creamy coffee with milk, a smooth and comforting choice.</p>
+            <p class="price">Price: $18</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card2">
+            <img src="image/coffee-milkshake-drink-food.jpg" alt="Coffee Milkshake">
+            <h4>Coffee Milkshake</h4>
+            <p>A delightful coffee milkshake, perfect for indulgence.</p>
+            <p class="price">Price: $13.5</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card2">
+            <img src="image/icecream-pineapples-fruity-summer.jpg" alt="Coffee Milkshake">
+            <h4>Ice Cream Pineapples</h4>
+            <p>A delightful coffee milkshake, perfect for indulgence.</p>
+            <p class="price">Price: $15</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="card2">
+            <img src="image/hands-ice-cream-sundae-cherry.jpg" alt="Ice Cream Sundae">
+            <h4>Ice Cream Sundae</h4>
+            <p>A delightful coffee milkshake, perfect for indulgence.</p>
+            <p class="price">Price: $22</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="res-container">
+        <h1>Make a Reservation</h1>
+        <p>
+            We welcome reservations for special occasions. Whether it's a birthday, anniversary, or a casual
+            get-together, we're here to make your event memorable.
+        </p>
+    </div>
+
+    <div class="reservation-form">
+        <h1>Reservations</h1>
+        <div class="form-group">
+            <label for="guest">guest</label>
+            <select name="party_size" id="party_size">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+                <option value="9">9 guests</option>
+                <option value="10">10 guests</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">
+            ###########<br>
+            Egypt - Cairo.<br>
+            El Saf - Giza<br><br>
+
+            Sunday – Friday 07:00 AM – 10:00 PM<br>
+            Friday 09:00 AM – 10:00 PM<br>
+            Saturday 08:00 PM – 11:00 PM<br><br>
+
+            Tel: 01151117044<br>
+            Email: ahmedhany200233@gmail.com<br><br>
+
+            &copy; 2023 Ice Coffee Shop. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
             });
-        });
-    });
 
-    // Shopping cart functionality
-    const cart = [];
-    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+            // Shopping cart functionality
+            const cart = [];
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
 
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const card = button.parentElement;
-            const itemName = card.querySelector('h4').textContent;
-            const itemPrice = parseFloat(card.querySelector('.price').textContent.replace('$', ''));
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const card = button.parentElement;
+                    const itemName = card.querySelector('h4').textContent;
+                    const itemPrice = parseFloat(card.querySelector('.price').textContent.replace('$', ''));
 
-            const item = {
-                name: itemName,
-                price: itemPrice
-            };
+                    const item = {
+                        name: itemName,
+                        price: itemPrice
+                    };
 
-            cart.push(item);
+                    cart.push(item);
 
-            // Update the cart display or perform any other cart-related actions.
-            console.log('Item added to cart:', item);
-        });
-    });
+                    // Update the cart display or perform any other cart-related actions.
+                    console.log('Item added to cart:', item);
+                });
+            });
 
-    // Form validation for reservations
-    const reservationForm = document.querySelector('.reservation-form');
-    const partySizeInput = document.getElementById('party_size');
-    const dateInput = document.getElementById('date');
-    const timeInput = document.getElementById('time');
+            // Form validation for reservations
+            const reservationForm = document.querySelector('.reservation-form');
+            const partySizeInput = document.getElementById('party_size');
+            const dateInput = document.getElementById('date');
+            const timeInput = document.getElementById('time');
 
-    reservationForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+            reservationForm.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-        // Perform validation here
-        if (partySizeInput.value <= 0 || dateInput.value === '' || timeInput.value === '') {
-            alert('Please fill in all required fields.');
-            return;
-        }
+                // Perform validation here
+                if (partySizeInput.value <= 0 || dateInput.value === '' || timeInput.value === '') {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
 
-        // If all fields are valid, submit the form or take any other necessary action.
-        alert('Reservation submitted successfully!');
-    });
+                // If all fields are valid, submit the form or take any other necessary action.
+                alert('Reservation submitted successfully!');
+            });
 
-    // Responsive navbar for mobile
-    const navbar = document.querySelector('.navbar');
-    const mobileMenuButton = document.createElement('div');
-    mobileMenuButton.className = 'mobile-menu-button';
-    navbar.appendChild(mobileMenuButton);
+            // Responsive navbar for mobile
+            const navbar = document.querySelector('.navbar');
+            const mobileMenuButton = document.createElement('div');
+            mobileMenuButton.className = 'mobile-menu-button';
+            navbar.appendChild(mobileMenuButton);
 
-    mobileMenuButton.addEventListener('click', () => {
-        navbar.classList.toggle('mobile-menu-active');
-    });
+            mobileMenuButton.addEventListener('click', () => {
+                navbar.classList.toggle('mobile-menu-active');
+            });
 
-    // Image slideshow or carousel
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.slideshow-image');
+            // Image slideshow or carousel
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.slideshow-image');
 
-    function showImage(index) {
-        images.forEach((image, i) => {
-            if (i === index) {
-                image.style.display = 'block';
-            } else {
-                image.style.display = 'none';
+            function showImage(index) {
+                images.forEach((image, i) => {
+                    if (i === index) {
+                        image.style.display = 'block';
+                    } else {
+                        image.style.display = 'none';
+                    }
+                });
             }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            }
+
+            setInterval(nextImage, 5000); // Change image every 5 seconds
+            showImage(currentIndex);
         });
-    }
 
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
-    }
-
-    setInterval(nextImage, 5000); // Change image every 5 seconds
-    showImage(currentIndex);
-});
-
-</script>
+    </script>
 </body>
+
 </html>

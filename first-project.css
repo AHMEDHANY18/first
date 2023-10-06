@@ -1,18 +1,20 @@
-  *{
+* {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+body {
+  overflow-x: hidden;
+}
 :root {
   --primary-color: #333;
-  --secondary-color: #7BAAAF;
+  --secondary-color: #7baaaf;
   --link-color: #fff;
   --link-hover-color: #555;
   --button-bg-color: #f39c12;
   --button-hover-color: #e67e22;
   --bg-color: #333;
-  --text-color: #FFF;
+  --text-color: #fff;
   --card-bg-color: #ccc;
   --card-text-color: #333;
   --card-hover-bg-color: #3e77b8;
@@ -22,21 +24,31 @@
 /* Navbar styles */
 .navbar {
   background-color: var(--primary-color);
-  padding: 20px 0;
+  padding: 20px 5px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
 }
-
+.navbar .nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
 /* CSS for the search form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: var(--bg-color);
+}
 #search-form {
   display: flex;
   align-items: center;
+  margin-top: 0px auto;
+  display: block;
 }
 
 #search-input {
-  width: 200px;
+  width: 400px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -60,17 +72,17 @@
 /* Logo styles */
 .logo {
   font-family: "Sofia", sans-serif;
-  font-size: 36px;
+  font-size: 20px;
+  font-weight: bold;
   color: var(--secondary-color);
   text-decoration: none;
-  font-family: cursive
-;
+  font-family: cursive;
 }
 
 .navbar a {
   color: var(--link-color);
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 5px;
   font-weight: bold;
   transition: background-color 0.3s;
   padding: 10px 15px;
@@ -82,14 +94,14 @@
 }
 
 #log {
+  font-family: sans-serif;
   background-color: var(--button-bg-color);
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
+
   transition: background-color 0.3s;
-  font-family: fantasy;
 }
 
 #log:hover {
@@ -100,7 +112,7 @@
 #header {
   position: relative;
   text-align: center;
-  background-image: url('image/coffee-2242213_1280.jpg');
+  background-image: url("image/coffee-2242213_1280.jpg");
   background-size: cover;
   background-position: center;
   color: var(--secondary-color);
@@ -116,7 +128,7 @@
 #header a {
   font-size: 24px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   background-color: #13118f;
   padding: 15px 30px;
   border-radius: 10px;
@@ -124,7 +136,7 @@
 }
 
 #order-now:hover {
-  background-color: #0E0A9D;
+  background-color: #0e0a9d;
 }
 
 /* Story styles */
@@ -184,7 +196,8 @@
   margin-bottom: 20px;
 }
 
-.card, .card2 {
+.card,
+.card2 {
   flex-basis: calc(33.33% - 20px);
   background-color: var(--card-bg-color);
   text-align: center;
@@ -197,34 +210,39 @@
   cursor: pointer;
 }
 
-.card img, .card2 img {
+.card img,
+.card2 img {
   max-width: 100%;
   height: auto;
   max-height: 200px;
   object-fit: cover;
 }
 
-.card h4, .card2 h4 {
+.card h4,
+.card2 h4 {
   font-size: 24px;
   margin: 10px 0;
   color: var(--card-text-color);
   text-align: left;
 }
 
-.card p, .card2 p {
+.card p,
+.card2 p {
   font-size: 18px;
   color: var(--card-text-color);
   text-align: left;
 }
 
-.card p, .card2 p {
+.card p,
+.card2 p {
   font-size: 18px;
   color: var(--card-text-color);
   text-align: center;
   margin-top: 10px;
 }
 
-.card:hover, .card2:hover {
+.card:hover,
+.card2:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: var(--card-hover-bg-color);
@@ -278,7 +296,8 @@ label {
   margin-bottom: 10px;
 }
 
-input, select {
+input,
+select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
